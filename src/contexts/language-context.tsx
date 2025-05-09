@@ -1,16 +1,20 @@
 "use client";
 
 import { DATA } from "@/data/resume";
-import { DATA_DE } from "@/data/resume-de";
+import { DATA_EN } from "@/data/resume-en";
 import { createContext, useContext, useState } from "react";
 
 export type Language = "de" | "en";
+
+// Typ für beide Datensätze als Union-Typ
+type ResumeData = typeof DATA | typeof DATA_EN;
+// TODO: Select language from browser
 
 interface LanguageContextType {
     language: Language;
     setLanguage: (lang: Language) => void;
     t: (key: string) => string;
-    getData: () => typeof DATA;
+    getData: () => ResumeData;
 }
 
 const translations = {
@@ -37,11 +41,11 @@ export function LanguageProvider({ children }: { children: React.ReactNode; }) {
     };
 
     // Funktion, um die entsprechenden Daten basierend auf der Sprache zu holen
-    const getData = () => {
-        return language === "de" ? DATA_DE : DATA;
+    const getData = (): ResumeData => {
+        return language === "de" ? DATA : DATA_EN;
     };
 
-    const value = {
+    const value: LanguageContextType = {
         language,
         setLanguage,
         t,
