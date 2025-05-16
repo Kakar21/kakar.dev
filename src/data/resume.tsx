@@ -1,31 +1,32 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { Cloud, HomeIcon, NotebookIcon } from "lucide-react";
 import { LiveIndicator } from "@/components/LiveIndicator";
 
 export const DATA = {
   name: "Ghulammustafa Kakar",
-  greeting: "Hallo, ich bin Mustafa",
+  greeting: "Hey, ich bin Mustafa",
   initials: "GK",
   url: "https://kakar.dev",
   // location: "Braunschweig, Germany",
   // locationLink: "https://www.google.com/maps/place/wolfenbüttel",
   description:
-    "Auf deutsch",
+    "Full-Stack-Entwickler mit Leidenschaft für KI und neue Technologien.",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "Seit Anfang 2025 entwickle ich als Junior Full-Stack Webentwickler komplexe Webanwendungen mit [React](https://nextjs.org/), [Node.js](https://nodejs.org/), [Laravel](https://laravel.com/) und [Zoho CRM](https://www.zoho.com/de/crm/). Dabei setze ich intensiv KI-Tools wie [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/), [Cursor AI](https://www.cursor.com/) und [v0](https://v0.dev/) ein, um eigenständig innovative Produkte schneller und effizienter umzusetzen. Besonders fasziniert mich, wie KI moderne Entwicklungsmethoden ermöglicht und meine Arbeit entscheidend verbessert.",
   avatarUrl: "/me.jpg",
   skills: [
     "React",
     "Next.js",
-    "Typescript",
+    "Angular",
+    "TypeScript",
     "Node.js",
+    "Django",
+    "Laravel",
     "Python",
-    "Go",
-    "Postgres",
-    "Docker",
-    "Kubernetes",
-    "Java",
-    "C++",
+    "PHP",
+    "MySQL",
+    "Firebase",
+    "Redis",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Startseite" },
@@ -53,7 +54,7 @@ export const DATA = {
         icon: Icons.x,
         navbar: false,
       },
-      Email: {
+      "E-Mail": {
         name: "Send Email",
         url: "mailto:ghulammustafa@kakar.dev",
         icon: Icons.email,

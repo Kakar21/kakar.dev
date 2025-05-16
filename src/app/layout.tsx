@@ -49,6 +49,8 @@ export const metadata: Metadata = {
   },
 };
 
+// TODO: Add CI/CD pipeline
+
 export default function RootLayout({
   children,
 }: {
