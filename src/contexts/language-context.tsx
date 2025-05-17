@@ -2,13 +2,12 @@
 
 import { DATA } from "@/data/resume";
 import { DATA_EN } from "@/data/resume-en";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 export type Language = "de" | "en";
 
 // Typ für beide Datensätze als Union-Typ
 type ResumeData = typeof DATA | typeof DATA_EN;
-// TODO: Select language from browser
 
 interface LanguageContextType {
     language: Language;
@@ -33,7 +32,16 @@ const translations = {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export function LanguageProvider({ children }: { children: React.ReactNode; }) {
-    const [language, setLanguage] = useState<Language>("de");
+    const [language, setLanguage] = useState<Language>("en");
+
+    useEffect(() => {
+        const browserLang = navigator.language.toLowerCase();
+        if (browserLang.startsWith("de")) {
+            setLanguage("de");
+        } else {
+            setLanguage("en");
+        }
+    }, []);
 
     // Funktion, um Übersetzungen für UI-Elemente zu holen
     const t = (key: string): string => {

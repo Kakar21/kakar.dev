@@ -46,7 +46,7 @@ export default function Page() {
       </section>
       <section id="about">
         <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">Über mich</h2>
+          <h2 className="text-xl font-bold">{DATA.titles.about}</h2>
         </BlurFade>
         <BlurFade delay={BLUR_FADE_DELAY * 4}>
           <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
@@ -57,7 +57,7 @@ export default function Page() {
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
-            <h2 className="text-xl font-bold">Berufserfahrung</h2>
+            <h2 className="text-xl font-bold">{DATA.titles.work}</h2>
           </BlurFade>
           {DATA.work.map((work, id) => (
             <BlurFade
@@ -82,7 +82,7 @@ export default function Page() {
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
-            <h2 className="text-xl font-bold">Ausbildung</h2>
+            <h2 className="text-xl font-bold">{DATA.titles.education}</h2>
           </BlurFade>
           {DATA.education.map((education, id) => (
             <BlurFade
@@ -105,7 +105,7 @@ export default function Page() {
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-3">
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Technologien</h2>
+            <h2 className="text-xl font-bold">{DATA.titles.skills}</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-1">
             {DATA.skills.map((skill, id) => (
@@ -122,13 +122,13 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Projekte
+                  {DATA.titles.projects}
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Highlights meiner Arbeit
+                  {DATA.titles.projectsSubtitle}
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Von einfachen Webseiten bis zu komplexen Web-Apps – hier einige Favoriten, die ich präsentieren kann.
+                  {DATA.titles.projectsDescription}
                 </p>
               </div>
             </div>
@@ -203,20 +203,20 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-              Kontakt
+                {DATA.titles.contact}
               </div>
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Schreib mir einfach
+                {DATA.titles.contactSubtitle}
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              Du hast Fragen? Schick mir einfach{" "}
+                {DATA.titles.contactDescriptionBeforeLink}
                 <Link
                   href={DATA.contact.social["E-Mail"].url}
                   className="text-blue-500 hover:underline"
                 >
-                  eine E-Mail.
-                </Link>{" "}
-                Ich antworte, sobald ich kann. Keine Werbung!
+                  {DATA.titles.contactLinkText}
+                </Link>
+                {DATA.titles.contactDescriptionAfterLink}
               </p>
             </div>
           </BlurFade>
