@@ -26,7 +26,7 @@ export default function Navbar() {
           <LanguageToggle />
         </DockIcon>
         <Separator orientation="vertical" className="h-full py-2" />
-        {DATA.navbar.map((item) => (
+        {/* {DATA.navbar.map((item) => (
           <DockIcon key={item.href}>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -45,7 +45,7 @@ export default function Navbar() {
               </TooltipContent>
             </Tooltip>
           </DockIcon>
-        ))}
+        ))} */}
         {/* <Separator orientation="vertical" className="h-full" /> */}
         {Object.entries(DATA.contact.social)
           .filter(([_, social]) => social.navbar)

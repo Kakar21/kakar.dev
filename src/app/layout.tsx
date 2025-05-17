@@ -47,7 +47,6 @@ export const metadata: Metadata = {
     google: "",
     yandex: "",
   },
-  manifest: "/manifest.json",
   icons: {
     icon: [
       { url: "/logo-black.svg", type: "image/svg+xml" },
