@@ -47,6 +47,24 @@ export const metadata: Metadata = {
     google: "",
     yandex: "",
   },
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/logo-black.svg", type: "image/svg+xml" },
+      { url: "/logo-white.svg", type: "image/svg+xml", media: "(prefers-color-scheme: dark)" },
+      { url: "/logo-black-16.png", type: "image/png", sizes: "16x16" },
+      { url: "/logo-white-16.png", type: "image/png", sizes: "16x16", media: "(prefers-color-scheme: dark)" },
+      { url: "/logo-black-32.png", type: "image/png", sizes: "32x32" },
+      { url: "/logo-white-32.png", type: "image/png", sizes: "32x32", media: "(prefers-color-scheme: dark)" },
+      { url: "/logo-black-96.png", type: "image/png", sizes: "96x96" },
+      { url: "/logo-white-96.png", type: "image/png", sizes: "96x96", media: "(prefers-color-scheme: dark)" },
+    ],
+    apple: [
+      { url: "/logo-black-180.png" },
+      // Du könntest hier auch eine spezifische weiße Version für den Dark Mode auf Apple-Geräten hinzufügen, falls gewünscht:
+      // { url: "/logo-white-180.png", media: "(prefers-color-scheme: dark)" }
+    ],
+  },
 };
 
 // TODO: Add CI/CD pipeline
