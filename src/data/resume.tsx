@@ -7,6 +7,7 @@ export const DATA = {
   greeting: "Hey, ich bin Mustafa",
   initials: "GK",
   url: "https://kakar.dev",
+  email: "ghulammustafa@kakar.dev",
   // location: "Braunschweig, Germany",
   // locationLink: "https://www.google.com/maps/place/wolfenbüttel",
   description:
@@ -28,6 +29,8 @@ export const DATA = {
     contactDescriptionBeforeLink: "Du hast Fragen? Schick mir einfach ",
     contactLinkText: "eine E-Mail",
     contactDescriptionAfterLink: ". Ich antworte, sobald ich kann. Keine Werbung!",
+    impressum: "Impressum",
+    datenschutz: "Datenschutzerklärung",
   },
   skills: [
     "React",

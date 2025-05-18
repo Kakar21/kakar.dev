@@ -23,6 +23,8 @@ export const DATA_EN = {
         contactDescriptionBeforeLink: "Want to chat? Just shoot me ",
         contactLinkText: "an email",
         contactDescriptionAfterLink: " and I'll respond whenever I can. I will ignore all soliciting.",
+        impressum: "Legal Notice",
+        datenschutz: "Privacy Policy",
     },
     navbar: [
         // { href: "/", icon: HomeIcon, label: "Home" },

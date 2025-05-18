@@ -10,11 +10,12 @@ import { Badge } from "@/components/ui/badge";
 import { useLanguage } from "@/contexts/language-context";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import { Button } from "@/components/ui/button";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
-  const { getData, t } = useLanguage();
+  const { getData, t, language } = useLanguage();
   const DATA = getData();
 
   return (
@@ -198,7 +199,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section> */}
-      <section id="contact">
+      <section id="contact" className="!mt-0">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="space-y-3">

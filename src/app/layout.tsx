@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import { LanguageProvider } from "@/contexts/language-context";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -66,8 +67,6 @@ export const metadata: Metadata = {
   },
 };
 
-// TODO: Add CI/CD pipeline
-
 export default function RootLayout({
   children,
 }: {
@@ -86,6 +85,7 @@ export default function RootLayout({
             <TooltipProvider delayDuration={0}>
               {children}
               <Navbar />
+              <Footer />
             </TooltipProvider>
           </LanguageProvider>
         </ThemeProvider>
