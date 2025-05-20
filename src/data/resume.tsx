@@ -95,7 +95,7 @@ export const DATA = {
         "Ich entwickle und implementiere moderne Webanwendungen mit Technologien wie React, Node.js, HTML, CSS und JavaScript. Dabei setze ich responsive und benutzerfreundliche Frontend-Designs um, entwickle und warte Backend-Systeme und Datenbanken und integriere Drittanbieter-Schnittstellen. Zudem unterstütze ich die Planung und Steuerung von Projekten, führe Softwaretests und Qualitätssicherungsmaßnahmen durch und recherchiere neue Technologien zur kontinuierlichen Verbesserung der Entwicklungsprozesse.",
     },
     {
-      company: "Selbstständig",
+      company: "Freelancer",
       badges: [],
       href: "https://kakar.dev",
       location: "Remote",

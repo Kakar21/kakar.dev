@@ -52,7 +52,7 @@ export const DATA_EN = {
         },
         {
             ...DATA.work[1],
-            company: "Self-employed", // Company name, likely no translation needed
+            // company: "Self-employed", // Company name, likely no translation needed
             title: "Web Developer",
             start: "June 2024",
             end: "January 2025",

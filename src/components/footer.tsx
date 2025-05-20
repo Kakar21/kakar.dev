@@ -9,8 +9,10 @@ export default function Footer() {
     const { language, getData } = useLanguage();
     const DATA = getData();
 
+    const BLUR_FADE_DELAY = 0.04;
+
     return (
-        <BlurFade delay={0.04}>
+        <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <footer className="w-full h-12 max-w-2xl mb-10 min-[515px]:mb-0 mt-10 min-[515px]:!mt-0 mx-auto flex justify-between items-end text-xs text-muted-foreground">
                 <div className="w-full flex h-full min-[515px]:h-9 justify-center min-[515px]:justify-between">
                     <Link href="/" className="h-full w-auto max-[515px]:hidden">

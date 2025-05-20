@@ -42,6 +42,7 @@ export default function Page() {
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
+            {/* TODO: Improve header and avatar */}
           </div>
         </div>
       </section>
@@ -201,7 +202,7 @@ export default function Page() {
       </section> */}
       <section id="contact" className="!mt-0">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+          <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="space-y-3">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 {DATA.titles.contact}
