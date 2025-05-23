@@ -49,7 +49,7 @@ export default function Page() {
             <BlurFade delay={BLUR_FADE_DELAY} key={showAvatar ? 'avatar' : 'waving'}>
               {!showAvatar ? (
                 <div className="size-28 flex items-start justify-start">
-                  <span className="text-6xl waving-hand" style={{ animationDelay: '1500ms' }}>👋</span>
+                  <span className="text-6xl waving-hand" style={{ animationDelay: '850ms' }}>👋</span>
                 </div>
               ) : (
                 <Avatar className="size-28 border">
