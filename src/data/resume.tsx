@@ -4,7 +4,7 @@ import { LiveIndicator } from "@/components/LiveIndicator";
 
 export const DATA = {
   name: "Ghulammustafa Kakar",
-  greeting: "Hey, ich bin Mustafa",
+  greeting: "Hi, ich bin Mustafa",
   initials: "GK",
   url: "https://kakar.dev",
   email: "ghulammustafa@kakar.dev",

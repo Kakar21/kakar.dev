@@ -11,12 +11,22 @@ import { useLanguage } from "@/contexts/language-context";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
 
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
   const { getData, t, language } = useLanguage();
   const DATA = getData();
+  const [showAvatar, setShowAvatar] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowAvatar(true);
+    }, 2000); // Nach 3 Sekunden zum Avatar wechseln
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
@@ -28,7 +38,7 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`${DATA.greeting} 👋`}
+                text={`${DATA.greeting}`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
@@ -36,13 +46,18 @@ export default function Page() {
                 text={DATA.description}
               />
             </div>
-            <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
+            <BlurFade delay={BLUR_FADE_DELAY} key={showAvatar ? 'avatar' : 'waving'}>
+              {!showAvatar ? (
+                <div className="size-28 flex items-start justify-start">
+                  <span className="text-6xl waving-hand" style={{ animationDelay: '1500ms' }}>👋</span>
+                </div>
+              ) : (
+                <Avatar className="size-28 border">
+                  <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                  <AvatarFallback>{DATA.initials}</AvatarFallback>
+                </Avatar>
+              )}
             </BlurFade>
-            {/* TODO: Improve header and avatar */}
           </div>
         </div>
       </section>
