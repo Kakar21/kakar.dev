@@ -45,6 +45,7 @@ export const DATA = {
     "MySQL",
     "Firebase",
     "Redis",
+    "Zoho CRM"
   ],
   navbar: [
     // { href: "/", icon: HomeIcon, label: "Startseite" },
