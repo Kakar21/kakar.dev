@@ -11,7 +11,7 @@ export const DATA = {
   // location: "Braunschweig, Germany",
   // locationLink: "https://www.google.com/maps/place/wolfenbüttel",
   description:
-    "Full-Stack-Entwickler mit Leidenschaft für KI und neue Technologien.",
+    "Full-Stack Entwickler mit Leidenschaft für KI und neue Technologien",
   summary:
     "Seit Anfang 2025 entwickle ich als Junior Full-Stack Webentwickler komplexe Webanwendungen mit [React](https://nextjs.org/), [Node.js](https://nodejs.org/), [Laravel](https://laravel.com/) und [Zoho CRM](https://www.zoho.com/de/crm/). Dabei setze ich intensiv KI-Tools wie [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/), [Cursor AI](https://www.cursor.com/) und [v0](https://v0.dev/) ein, um eigenständig innovative Produkte schneller und effizienter umzusetzen. Besonders fasziniert mich, wie KI moderne Entwicklungsmethoden ermöglicht und meine Arbeit entscheidend verbessert.",
   avatarUrl: "/me.jpg",

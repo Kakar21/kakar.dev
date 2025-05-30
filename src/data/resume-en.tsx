@@ -6,7 +6,7 @@ export const DATA_EN = {
     ...DATA,
     greeting: "Hi, I'm Mustafa",
     description:
-        "Full-stack developer with a passion for AI and new technologies.",
+        "Full-stack developer with a passion for AI and new technologies",
     summary:
         "Since the beginning of 2025, I have been developing complex web applications with [React](https://nextjs.org/), [Node.js](https://nodejs.org/), [Laravel](https://laravel.com/) and [Zoho CRM](https://www.zoho.com/de/crm/) as a junior full-stack web developer. I make intensive use of AI tools such as [ChatGPT](https://chatgpt.com/), [Gemini](https://gemini.google.com/), [Cursor AI](https://www.cursor.com/) and [v0](https://v0.dev/) to independently implement innovative products faster and more efficiently. I am particularly fascinated by how AI enables modern development methods and significantly improves my work.",
     titles: {
